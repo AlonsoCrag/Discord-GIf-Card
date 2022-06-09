@@ -65,8 +65,8 @@ while True:
 
         blured = cv2.GaussianBlur(frame, (35, 35), cv2.BORDER_REFLECT)
         canBlur = False
-        cv2.imshow("Video", blured)
-        cv2.waitKey(20)
+        # cv2.imshow("Video", blured)
+        # cv2.waitKey(20)
         writer.write(blured)
     else:
         cv2.putText(frame, text, ((textX + 4) * int(scale_choosed), ((textY) + 3) * int(scale_choosed)), font, scale_choosed, (163, 23, 168), 4)
@@ -81,8 +81,8 @@ while True:
         continue
     writer.write(frame)
 
-    cv2.imshow("Video", frame)
-    cv2.waitKey(20)
+    # cv2.imshow("Video", frame)
+    # cv2.waitKey(20)
 
 video.release()
 writer.release()
